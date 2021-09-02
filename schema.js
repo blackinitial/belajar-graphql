@@ -31,6 +31,8 @@ const typeDefs = gql`
       release_year: Int,
       genre: String
     ): Book!
+
+    deleteBook(_id: ID!): Boolean
   }
 `;
 

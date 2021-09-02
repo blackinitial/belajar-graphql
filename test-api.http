@@ -21,10 +21,20 @@ X-Request-Type: GraphQL
 
 mutation {
   updateBook(
-    _id: "612f888a207b3244cd80a211",
-    title: "ini update title loh"
+    _id: "612f897e207b3244cd80a21b",
+    title: "ini update title loh",
+    author: "yeppi"
     ) {
       _id,
       title
     }
+}
+
+### Delete Data
+POST http://localhost:4000/graphql HTTP/1.1
+Content-Type: application/json
+X-Request-Type: GraphQL
+
+mutation {
+  deleteBook(_id: "612f897b207b3244cd80a219")
 }
